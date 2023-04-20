@@ -153,7 +153,15 @@ public class MainActivity extends AppCompatActivity {
         }
         }catch(Exception e)
         {
-           lblResultado.setText("Compa. Pa que me llamas si te faltan cosas por llenar");
+            if (chkSi.isChecked()==true) {
+                new Mensajito("Operaciones",
+                        "Compa. Pa que me llamas si te faltan cosas por llenar", "OKIS")
+                        .show(getSupportFragmentManager(), "EQUIDE");
+
+                lblResultado.setText("");
+            }else {
+                lblResultado.setText("Compa. Pa que me llamas si te faltan cosas por llenar");
+            }
         }
     }
 
