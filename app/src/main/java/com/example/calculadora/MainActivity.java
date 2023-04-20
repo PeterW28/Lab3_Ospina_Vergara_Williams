@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         }else {
 
 
-                lblResultado.setText("" + operacion);
+                lblResultado.setText("Compa. Pa que me llamas si te faltan cosas por llenar");
             }
         }
         }catch(Exception e)
