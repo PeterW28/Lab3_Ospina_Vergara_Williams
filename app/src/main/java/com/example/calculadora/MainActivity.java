@@ -148,14 +148,12 @@ public class MainActivity extends AppCompatActivity {
         }else {
 
 
-                lblResultado.setText("Compa. Pa que me llamas si te faltan cosas por llenar");
+                lblResultado.setText("" + operacion);
             }
         }
         }catch(Exception e)
         {
-            new Mensajito("Operaciones",
-                    "Compa. Pa que me llamas si te faltan cosas por llenar", "REINTENTA")
-                    .show(getSupportFragmentManager(), "EQUIDE");
+           lblResultado.setText("Compa. Pa que me llamas si te faltan cosas por llenar");
         }
     }
 
